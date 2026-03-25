@@ -7,6 +7,8 @@ import com.leave.management.config.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
+
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -19,6 +21,7 @@ public class AuthController {
         return repo.save(emp);
     }
 
+    @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping("/login")
     public String login(@RequestBody Employee emp) {
 
