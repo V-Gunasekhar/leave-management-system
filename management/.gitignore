@@ -3,7 +3,18 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+# Ignore frontend folder
+fe/
 
+# Ignore IntelliJ files
+.idea/
+
+# Ignore build folder
+target/
+
+# OS files
+*.log
+*.class
 ### STS ###
 .apt_generated
 .classpath
